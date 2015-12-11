@@ -1,0 +1,12 @@
+Source: ros-indigo-innok-heros-control
+Section: misc
+Priority: extra
+Maintainer: Sabrina Heerklotz <sh@innok-robotics.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roslaunch
+Homepage: http://wiki.ros.org/Robots/Innok-Heros
+Standards-Version: 3.9.2
+
+Package: ros-indigo-innok-heros-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-controller-manager, ros-indigo-innok-heros-description, ros-indigo-innok-heros-gazebo, ros-indigo-joy, ros-indigo-teleop-twist-joy, ros-indigo-teleop-twist-keyboard, ros-indigo-twist-mux
+Description: package to control the Innok Heros with several devices (e. g. joystick and keyboard)
